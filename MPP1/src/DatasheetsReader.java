@@ -21,7 +21,7 @@ public class DatasheetsReader {
                 String[] temp = s.split("[ \\t]{2,}"); // cut
 
                 for (int i=0; i < temp.length; i++)
-                    temp[i] = temp[i].replaceAll(" ", ""); // delate space
+                    temp[i] = temp[i].replaceAll(" ", ""); // delete space
 
                 data.add(temp);
             }
@@ -30,7 +30,8 @@ public class DatasheetsReader {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
+
+
 
 }
