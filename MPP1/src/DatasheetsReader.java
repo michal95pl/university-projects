@@ -38,8 +38,6 @@ public class DatasheetsReader {
                     strings[i] = strings[i].replaceAll(",", ".");
                     data1[i] = Double.parseDouble(strings[i]);
                 }
-
-
                 return data1;
         }).toArray(Double[][]::new);
     }
