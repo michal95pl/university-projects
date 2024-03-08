@@ -1,12 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.function.Function;
-import java.util.function.IntFunction;
 import java.util.stream.Stream;
 
 public class DatasheetsReader {
@@ -16,7 +11,7 @@ public class DatasheetsReader {
         this.reader = new BufferedReader(new FileReader(path));
     }
 
-    void getData() {
+    String[][] getData() {
         try {
 
             Stream<String[]> dataStream =
@@ -27,12 +22,30 @@ public class DatasheetsReader {
                                     data1[i] = data1[i].replaceAll(" ", "");
                                 return data1;
                             });
-            
+
+            return dataStream.toArray(String[][]::new);
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
+    static Double[][] getAttributes(String[][] data) {
+        return Arrays.stream(data).map(strings -> {
+                Double[] data1 = new Double[strings.length-1];
 
+                for (int i=0; i < strings.length-1; i++) {
+                    strings[i] = strings[i].replaceAll(",", ".");
+                    data1[i] = Double.parseDouble(strings[i]);
+                }
+
+
+                return data1;
+        }).toArray(Double[][]::new);
+    }
+
+    static String[] getDecisionAttributes(String[][] data) {
+        return Arrays.stream(data).map(strings -> strings[strings.length-1]).toArray(String[]::new);
+    }
 
 }

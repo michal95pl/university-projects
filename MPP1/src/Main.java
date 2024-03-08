@@ -1,12 +1,14 @@
 import java.io.FileNotFoundException;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
         try {
-            DatasheetsReader reader = new DatasheetsReader("datasheets/iris_training.txt");
-            reader.getData();
+            DatasheetsReader reader = new DatasheetsReader("datasheets/iris_test.txt");
+            String[][] data = reader.getData();
+
+            String[] dat = DatasheetsReader.getDecisionAttributes(data);
+            Double[][] at = DatasheetsReader.getAttributes(data);
 
 
         } catch (FileNotFoundException e) {
