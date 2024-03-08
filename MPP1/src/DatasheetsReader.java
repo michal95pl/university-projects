@@ -3,7 +3,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.IntFunction;
+import java.util.stream.Stream;
 
 public class DatasheetsReader {
 
@@ -12,22 +16,19 @@ public class DatasheetsReader {
         this.reader = new BufferedReader(new FileReader(path));
     }
 
-    List<String[]> getData() {
+    void getData() {
         try {
-            List<String[]> data = new ArrayList<>();
 
-            while (this.reader.ready()) {
-                String s = this.reader.readLine();
-                String[] temp = s.split("[ \\t]{2,}"); // cut
-
-                for (int i=0; i < temp.length; i++)
-                    temp[i] = temp[i].replaceAll(" ", ""); // delete space
-
-                data.add(temp);
-            }
-
-            return data;
-        } catch (IOException e) {
+            Stream<String[]> dataStream =
+                    this.reader.lines()
+                            .map(s -> s.split("[ \\t]{2,}"))
+                            .map(data1 -> {
+                                for (int i = 0; i < data1.length; i++)
+                                    data1[i] = data1[i].replaceAll(" ", "");
+                                return data1;
+                            });
+            
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

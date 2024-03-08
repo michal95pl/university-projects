@@ -6,7 +6,7 @@ public class Main {
 
         try {
             DatasheetsReader reader = new DatasheetsReader("datasheets/iris_training.txt");
-            List<String[]> data = reader.getData();
+            reader.getData();
 
 
         } catch (FileNotFoundException e) {
