@@ -1,10 +1,12 @@
+import java.util.Arrays;
+
 public class KnnModel {
 
     private class ModelData
         implements Comparable<ModelData> {
 
-        private double x;
-        private String y;
+        public double x;
+        public String y;
 
         ModelData(double x, String y) {
             this.x = x;
@@ -14,6 +16,11 @@ public class KnnModel {
         @Override
         public int compareTo(ModelData o) {
             return Double.compare(this.x, o.x);
+        }
+
+        @Override
+        public String toString() {
+            return x + " -> " + y;
         }
     }
 
@@ -27,15 +34,22 @@ public class KnnModel {
         this.k = k;
     }
 
-    void predict(double[][] x) {
+    void predict(double[] x) {
 
+        ModelData[] modelData = new ModelData[x.length];
 
-//        for (int i=0; i < distance.length; i++) {
-//
-//            for (int j=0; j < this.x[0].length; j++)
-//                distance[i] += Math.pow((x[i][j] - this.x[i][j]), 2);
-//            distance[i] = Math.sqrt(distance[i]);
-//        }
+        for (int i=0; i < modelData.length; i++) {
+
+            for (int j=0; j < this.x[i].length; j++)
+                modelData[i].x += Math.pow((x[j] - this.x[i][j]), 2);
+
+            modelData[i].x = Math.sqrt(modelData[i].x);
+
+            Arrays.sort(modelData);
+
+            for (ModelData data : modelData)
+                System.out.println(data);
+        }
 
 
 
