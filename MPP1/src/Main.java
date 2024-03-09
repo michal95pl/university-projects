@@ -15,17 +15,9 @@ public class Main {
             DatasheetsReader reader1 = new DatasheetsReader("datasheets/iris_test.txt");
             data = reader1.getData();
 
-            int countTest = data.length;
-            int success = 0;
+            double precision = knnModel.testPrecision(DatasheetsReader.getAttributes(data), DatasheetsReader.getDecisionAttributes(data));
+            System.out.print(precision);
 
-            for (int i=0; i < countTest; i++) {
-                String s = knnModel.predict(DatasheetsReader.getAttributes(data)[i]);
-
-                if (s.equals(DatasheetsReader.getDecisionAttributes(data)[i]))
-                    success++;
-            }
-
-            System.out.print((int)(success / (double)countTest * 100) + "%");
 
 
         } catch (FileNotFoundException e) {

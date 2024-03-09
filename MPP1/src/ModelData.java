@@ -1,11 +1,11 @@
-public class ModelData implements Comparable<ModelData> {
+public class ModelData {
 
-    public double x=0;
-    public String y="";
+    public double x;
+    public String y;
 
-    @Override
-    public int compareTo(ModelData o) {
-        return Double.compare(this.x, o.x);
+    ModelData(double x, String y) {
+        this.x = x;
+        this.y = y;
     }
 
     @Override

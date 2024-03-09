@@ -13,7 +13,6 @@ public class DatasheetsReader {
 
     String[][] getData() {
         try {
-
             Stream<String[]> dataStream =
                     this.reader.lines()
                             .map(s -> s.split("[ \\t]{2,}"))

@@ -15,58 +15,44 @@ public class KnnModel {
 
     String predict(Double[] x) {
 
-        ModelData[] modelData = new ModelData[this.x.length];
+        PriorityQueue<ModelData> modelDataQueue = new PriorityQueue<>(Comparator.comparingDouble(o -> o.x));
 
-        for (int i=0; i < modelData.length; i++)
-            modelData[i] = new ModelData();
+        for (int i=0; i < this.x.length; i++) {
 
-        // for all learning data
-        for (int i=0; i < modelData.length; i++) {
+            double temp_x = 0;
 
             for (int j=0; j < this.x[i].length; j++) {
-                modelData[i].x += Math.pow((x[j] - this.x[i][j]), 2);
+                temp_x += Math.pow((x[j] - this.x[i][j]), 2);
             }
 
-
-            modelData[i].x = Math.sqrt(modelData[i].x);
-            modelData[i].y = this.y[i];
-
-            //Arrays.sort(modelData);
-
+            temp_x = Math.sqrt(temp_x);
+            modelDataQueue.add(new ModelData(temp_x, this.y[i]));
         }
 
-        // todo: sortowanie
-        for (int k = 0; k < modelData.length; k++) {
-            for (int n = k + 1; n < modelData.length; n++) {
-                if (modelData[k].x > modelData[n].x) {
-                    ModelData temp = modelData[n];
-                    modelData[n] = modelData[k];
-                    modelData[k] = temp;
-                }
-            }
-        }
-
-
-//        for (int i=0; i < this.x.length; i++) {
-//            System.out.print(Arrays.stream(this.x[i]).toList());
-//            System.out.print(" ");
-//            System.out.print(this.y[i]);
-//            System.out.print("     ");
-//            System.out.println(modelData[i]);
-//        }
 
         Map<String, Integer> mapResults = new HashMap<>();
 
-        for (int i=0 ; i < this.k; i++) {
-            if (!mapResults.containsKey(modelData[i].y)) {
-                mapResults.put(modelData[i].y, 0);
-            }
-            mapResults.put(modelData[i].y, mapResults.get(modelData[i].y) + 1);
+        for (int i=0; i < this.k && i < modelDataQueue.size(); i++) {
+
+            ModelData temp = modelDataQueue.remove();
+            mapResults.compute(temp.y, (key, val) -> (val == null)? 1 : val + 1);
         }
 
-        Map.Entry<String, Integer> max = Collections.max(mapResults.entrySet(), Comparator.comparingInt(Map.Entry::getValue));
+        return Collections.max(mapResults.entrySet(), Comparator.comparingInt(Map.Entry::getValue)).getKey();
+    }
 
-        return max.getKey();
+    double testPrecision(Double[][] testX, String[] testY) {
+
+        int numberTests = testY.length;
+        int success = 0;
+
+        for (int i=0; i < numberTests; i++) {
+            String s = this.predict(testX[i]);
+
+            if (s.equals(testY[i]))
+                success++;
+        }
+        return Math.round(success / (double)numberTests * 10000) / 100.;
     }
 
 }
