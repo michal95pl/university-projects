@@ -1,7 +1,7 @@
 public class ModelData implements Comparable<ModelData> {
 
     public double x=0;
-    public String y;
+    public String y="";
 
     @Override
     public int compareTo(ModelData o) {
