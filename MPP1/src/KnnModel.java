@@ -58,7 +58,7 @@ public class KnnModel {
         Map<String, Integer> mapResults = new HashMap<>();
 
         for (int i=0 ; i < this.k; i++) {
-            if (mapResults.containsKey(modelData[i].y) == false) {
+            if (!mapResults.containsKey(modelData[i].y)) {
                 mapResults.put(modelData[i].y, 0);
             }
             mapResults.put(modelData[i].y, mapResults.get(modelData[i].y) + 1);

@@ -15,7 +15,18 @@ public class Main {
             DatasheetsReader reader1 = new DatasheetsReader("datasheets/iris_test.txt");
             data = reader1.getData();
 
-            knnModel.predict(DatasheetsReader.getAttributes(data)[0]);
+            int countTest = data.length;
+            int success = 0;
+
+            for (int i=0; i < countTest; i++) {
+                String s = knnModel.predict(DatasheetsReader.getAttributes(data)[i]);
+
+                if (s.equals(DatasheetsReader.getDecisionAttributes(data)[i]))
+                    success++;
+            }
+
+            System.out.print((int)(success / (double)countTest * 100) + "%");
+
 
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
