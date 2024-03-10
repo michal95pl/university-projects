@@ -1,6 +1,5 @@
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.util.stream.Stream;
 import java.util.zip.DataFormatException;
 
 public class Main {
@@ -46,7 +45,7 @@ public class Main {
                 } catch (DataFormatException e) {
                     System.out.println(e.getMessage());
                 }
-                
+
                 cmd = new Scanner(System.in).nextLine();
             }
 

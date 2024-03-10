@@ -4,8 +4,8 @@ import java.util.zip.DataFormatException;
 public class KnnModel {
 
 
-    private Double[][] x; // attributes
-    private String[] y; // decision attributes
+    private final Double[][] x; // attributes
+    private final String[] y; // decision attributes
     private int k;
 
     KnnModel(Double[][] x, String[] y, int k) throws DataFormatException {
