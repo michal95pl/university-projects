@@ -1,0 +1,22 @@
+Welcome to our comprehensive guide on building an Object Detection (Object Detection) Model using YOLOv8 (You Only Look Once) — an advanced deep learning technique that has revolutionized computer vision tasks.
+
+In this tutorial, we’ll walk you through the process of creating an Object Detection model using YOLOv8, step-by-step. From downloading the dataset into google Colaboratory to training your model and making predictions, we’ve got you covered.
+
+Object Detection is pivotal in ensuring workplace safety, particularly in industries like construction and manufacturing. YOLOv8 enables real-time detection of safety helmets with remarkable precision and speed, making it a preferred solution for enhancing safety protocols in high-risk environments.
+
+By the end of this tutorial, you’ll have a solid understanding of how YDefines a dictionary named file_dict containing the following key-value pairs:
+‘train’: the path to the training data directory, formed by joining the ‘dataDir’ variable with ‘train’.
+‘val’: the path to the validation data directory, formed by joining the ‘dataDir’ variable with ‘valid’.
+‘test’: the path to the testing data directory, formed by joining the ‘dataDir’ variable with ‘test’.
+‘nc’: the number of classes, derived from the ‘num_classes’ variable.
+‘names’: a list of class names, derived from the ‘classes’ variable.
+Opens a file named ‘data.yaml’ in write mode within the ‘workingDir’ directory. Writes the content of the file_dict dictionary into the 'data.yaml' file using the YAML format. If the file doesn't exist, it creates a new one.OLOv8 works and how to implement it in your own projects. So, let’s dive in and unleash the pConstructs a dictionary named class_idx using a dictionary comprehension. It maps each string representation of an integer index str(i) to the corresponding class name classes[i] for every integer i in the range from 0 to num_classes - 1.
+
+Initializes two empty dictionaries: class_stat and data_len.
+Iterates over each mode in the list ['train', 'valid', 'test'].
+Initializes a dictionary named class_count with class names as keys and initial counts set to 0 for each class.
+Constructs the path to the labels directory for the current mode.
+Iterates over each file in the labels directory.
+Reads the lines of the current file and extracts the class information. It updates the counts of each class based on the extracted information.
+Calculates the total number of data points (files) for the current mode and stores it in the data_len dictionary.
+Stores the class count statistics for the current mode in the class_stat dictionary.ower of YOLOv8 together!

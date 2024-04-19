@@ -1,0 +1,29 @@
+Unlike other coding AI copilots, Devin can actually write entire apps on its own and not just autocompleting tasks. Perhaps, its most striking feature is its ability to fix code issues autonomously.
+
+In a demo by a Cognition Labs developer, an Upwork post prompted Devin to autonomously complete the entire project. What really impressed me is that Devin can fix issues in large repos and deploy in seconds.
+
+Also, I love how software engineers at Cognition refer to themselves as “Human SoftwareBut yeah, the AI space has been crazy since the beginning of the year.
+
+Remember just a month ago when NVIDIA CEO Jensen Huang said that with the advent of AI, everyone could become a programmer?
+
+Well, we’re getting there faster than we thought. We are truly living in unprecedented times.
+
+So, let’s address the elephant in the room. Will AI replace software engineers? Are they doomed?
+
+Replace? That depends. Doomed? Not yet. Here’s why.
+
+AI excels at automation, not innovation. Devin shines in automating repetitive tasks like code generation. This frees engineers to focus on the bigger picture: designing complex systems, prioritizing features, and ensuring software meets user needs.
+
+These require creativity, critical thinking, and understanding user psychology — areas where AI is still in its infancy.
+
+Devin thrives on established patterns. AI thrives on existing code and data. For entirely new applications or groundbreaking functionalities, human ingenuity is irreplaceable. Devin might struggle to replicate the inventiveness that produces revolutionary software.
+
+The human touch is paramount. Software development is not just coding; it’sDevin is a tool, not a replacement. Think of Devin as a supercharged power tool. It increases efficiency and automates tasks, but a skilled carpenter still needs their knowledge and experience to build a house.
+
+Similarly, just like how AI empowers other professions, Devin empowers engineers, not replaces them.
+
+The future of software engineering is likely a collaboration.
+
+Devin will change software engineering jobs. However, whether it replaces software engineers depends entirely on us. We can choose to be replaced or leverage it to become more productive and valuable engineers.
+
+AI automates repetitive tasks, freeing engineers to focus on innovation and user-centric design. This human-AI partnership will lead to a new era of software development — faster, more efficient, and focused on solving real-world problems. understanding user intent and experience. Engineers bridge the gap between technical feasibility and user desires.

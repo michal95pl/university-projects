@@ -1,0 +1,36 @@
+Działanie karabinu automatycznego opiera się na gazodynamicznym zautomatyzowaniu cyklu pracy broni. Przed oddaniem pierwszego strzału, konieczne jest ręczne wprowadzenie do komory naboju oraz napięcie mechanizmu uderzeniowego, po czym możliwe jest prowadzenie ognia ciągłego poprzez przytrzymywanie ściągniętego spustu. Możliwe jest to dzięki oddziaływaniu energii gazów prochowych wystrzelonego naboju bezpośrednio na zamek lub pośrednio poprzez suwadło co automatyzuje dalszy proces napinania mechanizmu uderzeniowego, ryglowania przewodu lufy oraz ekstrakcji łusek i pobierania kolejnych naboi z magazynka. W przypadku wyposażenia mechanizmu spustowego w przełącznika ognia (włączającego lub wyłączającego przerywacz), możliwy jest wybór trybu prowadzenia ognia pomiędzy ciągłym a pojedynczym (por. broń samoczynna i samoczynno-samopowtarzala).
+
+Historia
+I wojna światowa
+
+Cei-Rigotti
+
+Fiodorow
+Jeszcze przed I wojną światową poszukiwano broni mogącej łączyć siłę ognia ręcznego karabinu maszynowego, z mobilnością karabinu powtarzalnego. Jednym z pierwszych udanych karabinów automatycznych był prototyp opracowany przez włoskiego oficera Amerigo Cei-Rigotti w latach 1895–1900, jednak nie został on przyjęty do uzbrojenia[1].
+
+W 1916 r. w Armii Imperium Rosyjskiego wprowadzono pierwszy seryjnie produkowany karabin automatyczny (karabin Fiodorowa). Nowa konstrukcja była na tyle lekka, iż mogła być obsługiwana przez pojedynczego żołnierza, a jednoczesne zastosowanie stosunkowo słabego japońskiego naboju karabinowego (6,5 × 50 mm SR) umożliwiało kontrolowanie broni przy strzelaniu seriami bez konieczności stosowania podpory. Karabin został jednak użyty jedynie w niewielkiej ilości w czasie wojny, a ze względu na zasilanie nietypową amunicją został wkrótce wycofany z uzbrojenia[2].
+
+II wojna światowa
+
+AWS-36
+Po I wojnie światowej, podstawowe uzbrojenie indywidualne żołnierzy nadal stanowiły karabiny i karabinki powtarzalne, uzupełniane dodatkowo przez pistolety maszynowe. W latach 30 XX wieku w ZSRR podjęto kolejną próbę opracowania karabinu automatycznego, tym razem dostosowanego do znacznie silniejszego standardowego rosyjskiego naboju karabinowego – 7,62 × 54 mm R. Nowo powstały karabin AWS-36 okazał się jednak konstrukcją wyjątkowo zawodną, a zastosowanie silniejszego naboju znacząco utrudniało kontrolowanie broni przy ogniu ciągłym. W wyniku negatywnych doświadczeń, karabiny AWS zostały wycofane z uzbrojenia, a rosyjscy projektanci skupili się na opracowywaniu karabinów samopowtarzalnych.
+
+
+Od lewej: nabój pistoletowy, pośredni, karabinowy
+W trakcie II wojny światowej armia niemiecka (Wehrmacht) gromadziła raporty z frontu, których analiza mogła okazać się przydatna do wypracowania nowych taktyk oraz modyfikacji używanego wyposażenia i uzbrojenia. W wyniku wojennych doświadczeń zauważono, że większość walk pomiędzy piechotą toczyła się na dystansach nie przekraczających 400 m. Wyciągnięto z tego faktu prosty wniosek, iż dotychczas użytkowane karabiny powtarzalne zasilane silną amunicją karabinową (teoretycznie mogące razić przeciwnika nawet powyżej 1000 m), zapewniają osiągi przekraczające praktyczne zapotrzebowanie. Zastosowanie w to miejsce słabszej i lżejszej amunicji, pozwoliłoby na oszczędności finansowe i materiałowe, a także umożliwiłoby żołnierzom przenoszenie jej większego zapasu. Co istotne, broń zasilana taką amunicją mogłaby być mniejsza, lżejsza a dzięki zmniejszeniu odrzutu również – samoczynna[3]. Bronią pozornie spełniającą te warunki wydawać by się mogły pistolety maszynowe. Mimo iż ta automatyczna broń świetnie sprawdzała się w walce na krótkich dystansach, to na odległościach przekraczających 100–200 m stawała się już zupełnie bezużyteczna, ponieważ słaba amunicja pistoletowa nie zapewniała dostatecznego zasięgu i celności.
+
+W związku z tym zrodziła się potrzeba zaprojektowania amunicji będącej rozwiązaniem pośrednim pomiędzy nabojem karabinowym a pistoletowym, a co za tym idzie wprowadzeniem ręcznej broni automatycznej o konstrukcji podobnej do pistoletu maszynowego, mającej jednak znacznie większy zasięg i celność. Odpowiedzią na te zapotrzebowania było wprowadzenie nowego rodzaju amunicji: naboju pośredniego – 7,92 × 33 mm Kurz, który powstał poprzez skrócenie łuski dotychczas używanego naboju karabinowego – 7,92 × 57 mm Mauser[4].
+
+
+StG 44
+Niebawem dla nowego rodzaju amunicji opracowano również nową broń – karabinki automatyczne MKb 42, które stały się pierwszą na świecie bronią tej klasy wykorzystującą amunicję pośrednią, stanowiąc jednocześnie przełomowy krok w rozwoju broni strzeleckiej. Konstrukcja Mkb 42 była nadal rozwijana w czasie wojny, aż do powstania wersji ostatecznej, która została włączona do masowej produkcji jako StG 44 (Sturmgewehr 44)[5][6]. Masowe wykorzystanie StG 44 w czasie wojny wykazało sensowność założeń przyświecających opracowaniu tego typu broni, co w konsekwencji doprowadziło do rosnącej popularyzacji karabinków automatycznych zasilanych amunicją pośrednią już po II wojnie światowej. Jednocześnie niemiecka nazwa Sturmgewehr stała się popularnym określeniem dla tej nowej klasy broni na świecie (pol. karabin szturmowy; ang. assault rifle; fr. fusil d’assault; hiszp. fusil de asalto etc.).
+
+Po II wojnie światowej
+
+AK
+Po II wojnie światowej, szczególną popularność zdobył radziecki karabinek automatyczny AK (zasilany nabojem pośrednim 7,62 × 39 mm wz. 43), który wraz z jego wersjami rozwojowymi, jak i odmianami regionalnymi, stał się podstawową bronią strzelecką państw bloku wschodniego. Niezawodność, prostota obsługi, jak i niskie koszty produkcji sprawiają, że broń oparta konstrukcyjnie na AK, jest nadal wykorzystywana przez wiele państw świata (np. AK-74 w Rosji czy wz. 96 Beryl w Polsce)[7].
+
+
+HK G3 (na górze)
+M16 (na dole)
+Na zachodzie początkowo również planowano wprowadzenie karabinków automatycznych zasilanych amunicją pośrednią (brytyjski prototypowy EM-2), jednak ze względu na silną pozycję USA w NATO i faworyzowanie przez nich amunicji karabinowej, prac tych zaniechano, koncentrując się na karabinach wykorzystujących amunicję 7,62 × 51 mm NATO: samopowtarzalnych (np. M14, L1A1), ale również automatycznych (np. FN FAL, CETME B, HK G3). Stosowanie amunicji karabinowej w indywidualnej automatycznej broni strzeleckiej obarczone było jednak poważnymi problemami – duży odrzut utrudniał kontrolowanie broni przy strzelaniu seriami na czym cierpiała celność. W związku z tym, jak i z powodu popularności amunicji pośredniej w bloku wschodnim, również w NATO wprowadzono w końcu własny wariant naboju pośredniego – 5,56 × 45 mm, który początkowo zastosowano w amerykańskim karabinku automatycznym M16, a następnie w szeregu innych konstrukcji (np. M4, CETME L, FAMAS, L85, G36)[7].

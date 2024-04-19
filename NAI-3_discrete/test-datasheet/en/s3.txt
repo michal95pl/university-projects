@@ -1,0 +1,25 @@
+A VPN is a powerful tool for keeping your private information under wraps, but what does it mean for you if your VPN is logging your data on its network?
+
+By Chris Stobing
+
+If you’re wondering what kind of data VPNs-free or paid-collect on you, you’re not alone. Why do some VPNs engage in this seemingly invasive practice, and what does it mean for your privacy? How much should you be worried? We’re here to explain.
+
+What Types of Data Do VPNs Log?
+First, it’s helpful to know what data a VPN may or may not log from your device, as well as what the service might do with it.
+
+Usage Metadata
+This metric can be something as innocuous (and necessary) as logging how much data you have used in a specific period-a requirement for free or paid VPNs that come with bandwidth caps on your plan. However, it can also extend to the way you use your VPN, including how often you sign in (or don’t), how long you stay connected to a VPN per session, or what devices you connect from most often.
+
+VPNs may collect the data for perfectly legitimate reasons or for more questionable practices. Legitimate uses include limiting the number of simultaneous connections users have to the network, how many IP address blocks they’re requesting, or how much data they’ve used on the network in a particular amount of time.
+
+Questionable, in this context, can mean anything from selling that usage metadata to third-party advertisers and marketing firms (this is especially prevalent in free options) to providing the data to law enforcement upon request. More on that specific point later.
+
+Browsing History
+Another logging policy you might object to is the tracking of browsing history and browsing data. This includes anything from URLs visited to DNS requests, and it can either be done voluntarily by the VPN company, or it may be requested by authorities; this would mean the VPN would need to start logging this activity for a user under legal duress.
+
+However, there are a limited number of VPNs, such as Hide.me, that are incapable of logging this information due to the structure of their network. This is, of course, by design. If law enforcement does come knocking, Hide.me can refuse the request based on the fact that the network was built from scratch to make the practice effectively impossible.
+
+Connection Logs
+Connection logging can be both beneficial and potentially detrimental to VPN users. The beneficial side of connection logging comes in the form of what’s known as server-level logging. This is data like bandwidth usage or dates and times of connections that are collected by the server that you’re connecting to. This is most often used to help VPN engineers improve the quality of the network or to specifically target bugs or routing errors that might be slowing a particular server. This kind of logging leads to greater health of the system and ensures that you’re always getting the most optimized performance from your VPN connection.
+
+The less savory side of connection logs is what’s known as user-level logging. This can include identifying factors like a connected device’s originating MAC address or IP address. These two pieces of information, handed to law enforcement or accidentally leaked into the hands of hackers, could lead to the personal identification of the user connecting to the VPN network. You don’t often hear about this kind of identification in connection with VPNs, but it’s not unknown.

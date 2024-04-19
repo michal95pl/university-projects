@@ -1,0 +1,15 @@
+RAM Pack Wobble
+My late wife Jane was also interested in technology. She had a ZX81 during her teenage years, long before we met. Jane also had a 16 KB RAM expansion plugged into her machine.
+
+She told me about spending hours typing in program listings from computer magazines, only to have the machine crash due to the dreaded ‘RAM pack wobble’. (The connection to the memory expansion was sensitive to the slightest movement.)
+
+When that happened, everything that had been typed in was lost. The cassette interface was also unreliable for her when saving programs to audio tape.
+Add-Ons
+As with other home computers, a wide range of extras appeared on the market for the ZX81. In addition to modest RAM expansions, I remember seeing one in the mid-80s with 1 MB! The Z80 chip could only address 64 KB, so lots of paging would have been involved!
+
+Maplin offered add-ons for several different computers. One of the things they advertised heavily for the ZX81 was a full-sized keyboard. It looked somewhat crude and almost comical for the keyboard to be bigger than the computer!
+
+Conclusion
+For Christmas 2009, my wife gave me a ZX81 she’d bought on eBay. It meant a lot because of the way I’d missed out on having one as a teenager. However, its limitations mean it doesn’t get powered up frequently.
+
+These days, it’s more of an ornament. But it’s one I will never part with.The ZX81 had two modes: FAST and SLOW. In FAST mode, it ran at full speed, but there was a catch: the video output was only produced if the machine was waiting for user input, resulting in a flickery display. SLOW mode gave a steady video output at the expense of speed.
