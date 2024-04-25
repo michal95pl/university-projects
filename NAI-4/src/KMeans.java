@@ -27,8 +27,8 @@ public class KMeans {
 
         for (int i=0; i < k; i++) {
             for (int j=0; j < x[0].length; j++) {
-                double coordinate = Math.random() * 6;
-                coordinate = Math.round(coordinate * 6.0) / 6.0;
+                double coordinate = Math.random() * 5;
+                coordinate = Math.round(coordinate * 5.0) / 5.0;
                 centroids[i][j] = coordinate;
             }
         }
@@ -135,30 +135,45 @@ public class KMeans {
         }
     }
 
-    public void getEntropy(double[][] x, String[] y) {
-        Map<String, List<Integer>> group = new HashMap<>();
+    private double[] getClustersEntropy(double[][] x, String[] y) {
 
-        // predict group for decision attribute
+        double[] entropy = new double[k];
+        Map<String, Integer>[] counter = new HashMap[k];
+
+        for (int i=0; i < k; i++)
+            counter[i] = new HashMap<>();
+
+        Arrays.fill(entropy, 0);
+
         for (int i=0; i < x.length; i++) {
-            if (!group.containsKey(y[i]))
-                group.put(y[i], new ArrayList<>());
+            int index = getIndexNearestCentroid(x[i]);
+            String key = y[i];
 
-            group.get(y[i]).add(predictGroup(x[i]));
+            if (counter[index].containsKey(key))
+                counter[index].put(key, counter[index].get(key) + 1);
+            else
+                counter[index].put(key, 1);
         }
 
-        for (String key : group.keySet()) {
-            List<Integer> temp = group.get(key);
-            double[] m = new double[temp.size()];
+        for (int i=0; i < k; i++) {
+            int sum = 0;
+            for (String key : counter[i].keySet())
+                sum += counter[i].get(key);
 
-            for (int i=0; i < temp.size(); i++) {
-                m[i] = temp.get(i);
+            for (String key : counter[i].keySet()) {
+                double p = (double)counter[i].get(key) / sum;
+                entropy[i] += p * Math.log(p) / Math.log(2);
             }
 
-            System.out.println(key + " " + Vector.entropy(m));
+            entropy[i] = -entropy[i];
         }
+
+        return entropy;
     }
 
     public void showClusters(double[][] x, String[] y) {
+
+        double[] entropy = getClustersEntropy(x, y);
 
         for (int indexCluster = 0; indexCluster < k; indexCluster++) {
             System.out.println("\nCluster: " + indexCluster);
@@ -166,11 +181,8 @@ public class KMeans {
             for (int i=0; i < x.length; i++)
                 if (getIndexNearestCentroid(x[i]) == indexCluster)
                     System.out.println(y[i]);
+
+            System.out.println("Entropy: " + entropy[indexCluster]);
         }
     }
-
-    public int predictGroup(double[] x) {
-        return getIndexNearestCentroid(x);
-    }
-
 }
